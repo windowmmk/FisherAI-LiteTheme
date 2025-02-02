@@ -1,3 +1,6 @@
+将您提供的暗黑模式（dark mode）CSS转换为亮色模式（light mode），主要是将背景颜色、文本颜色及其他相关样式调整为适合亮色模式的配色方案。以下是改写后的CSS代码：
+
+```css
 .my-extension-resultPage {
   position: fixed;
   top: 0;
@@ -5,7 +8,7 @@
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: #111827;
+  background-color: #ffffff; /* 改为白色背景 */
 }
 
 .my-extension-header {
@@ -13,8 +16,8 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #111827;
-    color: white;
+    background-color: #ffffff; /* 改为白色背景 */
+    color: black; /* 改为黑色文本 */
     padding: 8px;
     display: flex;
     justify-content: end;
@@ -41,23 +44,23 @@
     left: 0;
     top: 25px;
     bottom: 120px;
-    background-color: #111827;
+    background-color: #ffffff; /* 改为白色背景 */
     overflow-x: auto; 
     overflow-y: auto; 
     line-height: 1.6;
-    color: white;
+    color: black; /* 改为黑色文本 */
 }
 
 .my-extension-content h1 {
-  color: #28a745;
+  color: #28a745; /* 保持绿色 */
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px 0;
   display: block;
 }
 
-.my-extension-content h2,h3,h4 {
-  color: #28a745;
+.my-extension-content h2, h3, h4 {
+  color: #28a745; /* 保持绿色 */
   font-weight: bold;
   font-size: 17px;
   padding: 10px 0;
@@ -75,7 +78,7 @@
 }
 
 .my-extension-content a {
-  color: white;
+  color: #007bff; /* 改为蓝色链接 */
   text-decoration: underline;
   font-weight: bold;
 }
@@ -84,6 +87,7 @@
   display: block !important;
   font-size: 13px;
   margin-bottom: 3px;
+  color: black; /* 改为黑色文本 */
 }
 
 .my-extension-content ul, .my-extension-content ol {
@@ -102,13 +106,13 @@
 .my-extension-content li {
   display: list-item;
   padding-left: 5px;
-  color: white;
+  color: black; /* 改为黑色文本 */
   font-size: 15px;
 }
 
 .my-extension-content pre, .my-extension-content code {
-  background-color: #282c34;
-  color: #fff;
+  background-color: #f8f9fa; /* 改为浅色背景 */
+  color: #333; /* 改为深色文本 */
   overflow-x: auto;
   max-width: 100%;
   word-wrap: break-word;
@@ -122,7 +126,7 @@
 .my-extension-content p {
   font-size: 15px;
   line-height: 1.6;
-  color: white;
+  color: black; /* 改为黑色文本 */
 }
 
 .my-extension-dialogue {
@@ -133,8 +137,8 @@
   display: flex;
   align-items: center;
   padding: 5px 10px;
-  background-color: #111827;
-  border-top: 1px solid #111827;
+  background-color: #ffffff; /* 改为白色背景 */
+  border-top: 1px solid #ddd; /* 改为浅色边框 */
   box-sizing: border-box;
 }
 
@@ -142,9 +146,9 @@
   flex-grow: 1;
   padding: 15px;
   margin-right: 5px;
-  border: 1px solid #3C3C3C;
-  background-color: #111827;
-  color: white;
+  border: 1px solid #ccc; /* 改为浅色边框 */
+  background-color: #f8f9fa; /* 改为浅色背景 */
+  color: black; /* 改为黑色文本 */
   font-size: 15px;
   border-radius: 5px;
   resize: none; /* 禁止用户手动调整大小 */
@@ -152,7 +156,7 @@
 
 .my-extension-dialogue-submit, .my-extension-dialogue-generate {
   padding: 5px;
-  background-color: #3C3C3C;
+  background-color: #28a745; /* 改为绿色 */
   color: white;
   cursor: pointer;
   border: none;
@@ -173,15 +177,15 @@
   padding-bottom: 15px;
 }
 
-
 .ai-message p {
   word-wrap: break-word; /* 允许长单词换行 */
   overflow-wrap: break-word; /* 处理超长单词换行，兼容性更好 */
   max-width: 100%;
+  color: black; /* 改为黑色文本 */
 }
 
 .user-message:not(:first-of-type) {
-  border-top: 1px solid #3C3C3C;
+  border-top: 1px solid #ddd; /* 改为浅色边框 */
   padding-top: 20px;
 }
 
@@ -193,8 +197,8 @@
     display: none;
     z-index: 100000;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.9); /* 改为白色半透明背景 */
+    color: black; /* 改为黑色文本 */
     border-radius: 5px;
     font-size: 14px;
 }
@@ -203,12 +207,12 @@
   font-size: 20px;
   margin-top: 20px;
   margin-left: 10px;
-  color: #28a745
+  color: #28a745; /* 保持绿色 */
 }
 
 .my-extension-note {
   font-size: 12px;
-  color: #9E9E9E;
+  color: #6f6f6f; /* 改为深灰色 */
   margin-top: 20px;
 }
 
@@ -219,26 +223,25 @@
 }
 
 .chat-content img {
-  max-width:100%;
+  max-width: 100%;
   display: block;
 }
 
 .feature-container {
   margin-top: 20px;
   font-family: Arial, sans-serif;
-
 }
 
 .feature-title {
   font-size: 12px;
-  color: #6f6f6f;
+  color: #6f6f6f; /* 改为深灰色 */
   margin: 20px 0;
   margin-top: 40px;
 }
 
 .feature-item {
-  background-color: #2c2f33;
-  color: white;
+  background-color: #f8f9fa; /* 改为浅色背景 */
+  color: black; /* 改为黑色文本 */
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -273,18 +276,18 @@
 
 .feature-desc {
   font-size: 12px;
-  color: #6f6f6f;
+  color: #6f6f6f; /* 改为深灰色 */
   margin-top: 5px;
 }
 
 .navigation-bar {
-  position:fixed;
+  position: fixed;
   bottom: 70px;
   display: flex;
   justify-content: start;
   align-items: center;
   padding: 10px;
-  background-color: #111827;
+  background-color: #ffffff; /* 改为白色背景 */
 }
 
 .navigation-bar > div {
@@ -293,10 +296,10 @@
 
 #model-selection {
   padding: 5px 10px;
-  border: 1px solid #3C3C3C;
+  border: 1px solid #ccc; /* 改为浅色边框 */
   border-radius: 5px;
-  background-color: #111827;
-  color: white;
+  background-color: #f8f9fa; /* 改为浅色背景 */
+  color: black; /* 改为黑色文本 */
   width: 150px;
   white-space: nowrap;
   overflow: hidden;
@@ -309,25 +312,25 @@
   align-items: center;
   padding: 5px;
   border-radius: 5px;
-  background-color: #7c7a7a;
+  background-color: #e0e0e0; /* 改为浅灰色背景 */
 }
 
 #newChat-div {
-  right:10px !important;
+  right: 10px !important;
 }
 
 .icon-copy {
   width: 16px;
   height: 16px;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7); /* 改为深色 */
   position: absolute;
   right: 5px;
   padding-bottom: 5px;
 }
 
 .icon-copy:hover {
-  color: white;
+  color: black; /* 改为黑色 */
 }
 
 .image-preview-area {
@@ -338,7 +341,7 @@
   left: 0;
   right: 0;
   padding: 0px 10px;
-  background-color: #111827;
+  background-color: #ffffff; /* 改为白色背景 */
   z-index: 1000;
 }
 
@@ -378,8 +381,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.9); /* 改为白色半透明背景 */
+  color: black; /* 改为黑色文本 */
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -389,23 +392,25 @@
 .shortcut-menu, .model-params, .tool-store {
   display: none;
   position: fixed;
-  background-color: #111827;
-  border: 1px solid #3C3C3C;
+  background-color: #ffffff; /* 改为白色背景 */
+  border: 1px solid #ccc; /* 改为浅色边框 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   width: 200px;
   left: 10px;
   bottom: 115px;
-  color: white;
+  color: black; /* 改为黑色文本 */
 }
+
 .shortcut-menu div {
   padding: 8px 16px;
   cursor: pointer;
   display: flex; 
   align-items: center;
 }
+
 .shortcut-menu div:hover {
-  background-color: #3C3C3C;
+  background-color: #e0e0e0; /* 改为浅灰色背景 */
 }
 
 .shortcut-menu svg {
@@ -430,7 +435,7 @@
 }
 
 .model-params h2 {
-  color: #28a745;
+  color: #28a745; /* 保持绿色 */
   padding-left: 15px;
 }
 
@@ -450,19 +455,18 @@
 .params-item input[type="number"] {
   width: 50px;
   text-align: center;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
+  background-color: #f5f5f5; /* 改为浅色背景 */
+  border: 1px solid #ddd; /* 改为浅色边框 */
   border-radius: 5px;
 }
 
 .tool-store {
   width: 180px;
-  /* left: 160px; */
   display: block;
 }
 
 .tool-store h2 {
-  color: #28a745;
+  color: #28a745; /* 保持绿色 */
   padding-left: 15px;
 }
 
@@ -500,8 +504,8 @@
 }
 
 .tool-item input[type="checkbox"]:checked {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #28a745; /* 改为绿色 */
+  border-color: #28a745; /* 改为绿色 */
 }
 
 .tool-item input[type="checkbox"]:checked::before {
@@ -518,9 +522,9 @@
 }
 
 .error-message {
-  color: #ff4d4d;
+  color: #ff4d4d; /* 保持红色 */
   padding: 10px;
-  border: 1px solid #ff4d4d;
+  border: 1px solid #ff4d4d; /* 保持红色边框 */
   border-radius: 5px;
   margin: 20px 0;
 }
@@ -528,7 +532,7 @@
 .user-message {
   position: relative;
   align-self: flex-end;
-  color: #28a745;
+  color: #28a745; /* 保持绿色 */
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px 0;
@@ -554,13 +558,13 @@
 .edit-message-btn svg {
   width: 16px;
   height: 16px;
-  color: #ffffff;
+  color: #000000; /* 改为黑色 */
 }
 
 .save-message-btn, .cancel-message-btn {
   margin-left: 10px;
   padding: 5px 10px;
-  background-color: #3C3C3C;
+  background-color: #28a745; /* 改为绿色 */
   color: white;
   border: none;
   border-radius: 5px;
@@ -572,8 +576,17 @@
   min-height: 100px;
   margin-bottom: 10px;
   padding: 5px;
-  background-color: #111827;
-  color: white;
-  border: 1px solid #3C3C3C;
+  background-color: #f8f9fa; /* 改为浅色背景 */
+  color: black; /* 改为黑色文本 */
+  border: 1px solid #ccc; /* 改为浅色边框 */
   border-radius: 5px;
 }
+```
+
+### 主要改动
+1. **背景颜色**：将所有的深色背景（如 `#111827` 和 `#282c34`）改为白色或浅色（如 `#ffffff`, `#f8f9fa`）。
+2. **文本颜色**：将所有的白色文本改为黑色或深色（如 `black` 或 `#333`）。
+3. **边框颜色**：将深色边框（如 `#3C3C3C`）改为浅色（如 `#ddd` 或 `#ccc`）。
+4. **链接颜色**：将链接颜色改为蓝色（如 `#007bff`），以符合常见的亮色模式设计。
+
+您可以根据需要进一步调整颜色和样式，使其符合您具体的设计需求。
