@@ -1,4 +1,6 @@
-将您提供的暗黑模式（dark mode）CSS转换为亮色模式（light mode），主要是将背景颜色、文本颜色及其他相关样式调整为适合亮色模式的配色方案。以下是改写后的CSS代码：
+为了将字体增大2号，我们可以对所有涉及到字体大小的CSS属性进行调整。在CSS中，通常使用 `em` 或 `rem` 单位来设置字体大小，这样可以更容易地进行相对调整。如果原始字体大小是 `px`，我们将其增加一个合适的比例。
+
+以下是更新后的CSS代码，其中所有字体大小都增加了2号（通常约等于 `1.2em` 或 `20%` 的增量）：
 
 ```css
 .my-extension-resultPage {
@@ -21,7 +23,7 @@
     padding: 8px;
     display: flex;
     justify-content: end;
-    font-size: 0.9em;
+    font-size: 1.1em; /* 增大字体大小 */
     font-weight: bold;
     z-index: 9999999;
 }
@@ -53,7 +55,7 @@
 
 .my-extension-content h1 {
   color: #28a745; /* 保持绿色 */
-  font-size: 20px;
+  font-size: 2.4em; /* 增大字体大小 */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px 0;
   display: block;
@@ -62,7 +64,7 @@
 .my-extension-content h2, h3, h4 {
   color: #28a745; /* 保持绿色 */
   font-weight: bold;
-  font-size: 17px;
+  font-size: 2em; /* 增大字体大小 */
   padding: 10px 0;
   margin: 10px 0 10px;
   font-family: 'Arial', sans-serif;
@@ -70,11 +72,11 @@
 }
 
 .my-extension-content h3 {
-  font-size: 15px;
+  font-size: 1.7em; /* 增大字体大小 */
 }
 
 .my-extension-content h4 {
-  font-size: 12px;
+  font-size: 1.2em; /* 增大字体大小 */
 }
 
 .my-extension-content a {
@@ -85,7 +87,7 @@
 
 .search-source {
   display: block !important;
-  font-size: 13px;
+  font-size: 1.5em; /* 增大字体大小 */
   margin-bottom: 3px;
   color: black; /* 改为黑色文本 */
 }
@@ -107,7 +109,7 @@
   display: list-item;
   padding-left: 5px;
   color: black; /* 改为黑色文本 */
-  font-size: 15px;
+  font-size: 1.7em; /* 增大字体大小 */
 }
 
 .my-extension-content pre, .my-extension-content code {
@@ -120,11 +122,11 @@
   border-radius: 2px;
   padding: 0.1em;
   font-family: 'Consolas', 'Monaco', 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
-  font-size: 0.85em;
+  font-size: 1em; /* 增大字体大小 */
 }
 
 .my-extension-content p {
-  font-size: 15px;
+  font-size: 1.7em; /* 增大字体大小 */
   line-height: 1.6;
   color: black; /* 改为黑色文本 */
 }
@@ -149,7 +151,7 @@
   border: 1px solid #ccc; /* 改为浅色边框 */
   background-color: #f8f9fa; /* 改为浅色背景 */
   color: black; /* 改为黑色文本 */
-  font-size: 15px;
+  font-size: 1.7em; /* 增大字体大小 */
   border-radius: 5px;
   resize: none; /* 禁止用户手动调整大小 */
 }
@@ -200,18 +202,18 @@
     background-color: rgba(255, 255, 255, 0.9); /* 改为白色半透明背景 */
     color: black; /* 改为黑色文本 */
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 1.4em; /* 增大字体大小 */
 }
 
 .my-extension-slogan {
-  font-size: 20px;
+  font-size: 2.4em; /* 增大字体大小 */
   margin-top: 20px;
   margin-left: 10px;
   color: #28a745; /* 保持绿色 */
 }
 
 .my-extension-note {
-  font-size: 12px;
+  font-size: 1.4em; /* 增大字体大小 */
   color: #6f6f6f; /* 改为深灰色 */
   margin-top: 20px;
 }
@@ -233,7 +235,7 @@
 }
 
 .feature-title {
-  font-size: 12px;
+  font-size: 1.4em; /* 增大字体大小 */
   color: #6f6f6f; /* 改为深灰色 */
   margin: 20px 0;
   margin-top: 40px;
@@ -271,11 +273,11 @@
 }
 
 .feature-name {
-  font-size: 14px;
+  font-size: 1.6em; /* 增大字体大小 */
 }
 
 .feature-desc {
-  font-size: 12px;
+  font-size: 1.4em; /* 增大字体大小 */
   color: #6f6f6f; /* 改为深灰色 */
   margin-top: 5px;
 }
@@ -385,7 +387,7 @@
   color: black; /* 改为黑色文本 */
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 1.4em; /* 增大字体大小 */
   z-index: 1;
 }
 
@@ -437,6 +439,7 @@
 .model-params h2 {
   color: #28a745; /* 保持绿色 */
   padding-left: 15px;
+  font-size: 2em; /* 增大字体大小 */
 }
 
 .params-item {
@@ -446,7 +449,7 @@
 }
 
 .params-item label {
-  font-size: 14px;
+  font-size: 1.6em; /* 增大字体大小 */
   font-weight: 600;
   width: 80px;
   margin-right: 10px;
@@ -468,6 +471,7 @@
 .tool-store h2 {
   color: #28a745; /* 保持绿色 */
   padding-left: 15px;
+  font-size: 2em; /* 增大字体大小 */
 }
 
 .tool-item {
@@ -487,7 +491,7 @@
 
 .tool-item span {
   width: 80px;
-  font-size: 14px;
+  font-size: 1.6em; /* 增大字体大小 */
   font-weight: 600;
 }
 
@@ -513,7 +517,7 @@
   display: block;
   text-align: center;
   color: white;
-  font-size: 14px;
+  font-size: 1.4em; /* 增大字体大小 */
 }
 
 .tool-item input[type="checkbox"]:focus {
@@ -533,7 +537,7 @@
   position: relative;
   align-self: flex-end;
   color: #28a745; /* 保持绿色 */
-  font-size: 20px;
+  font-size: 2.2em; /* 增大字体大小 */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px 0;
   display: block;
@@ -582,11 +586,3 @@
   border-radius: 5px;
 }
 ```
-
-### 主要改动
-1. **背景颜色**：将所有的深色背景（如 `#111827` 和 `#282c34`）改为白色或浅色（如 `#ffffff`, `#f8f9fa`）。
-2. **文本颜色**：将所有的白色文本改为黑色或深色（如 `black` 或 `#333`）。
-3. **边框颜色**：将深色边框（如 `#3C3C3C`）改为浅色（如 `#ddd` 或 `#ccc`）。
-4. **链接颜色**：将链接颜色改为蓝色（如 `#007bff`），以符合常见的亮色模式设计。
-
-您可以根据需要进一步调整颜色和样式，使其符合您具体的设计需求。
